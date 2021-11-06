@@ -16,7 +16,7 @@ module.exports = merge(devServerConfig, {
   plugins: [
     new CKEditorWebpackPlugin({
       // When changing the built-in language, remember to also change it in the editor's configuration (src/ckeditor.js).
-      language: 'zh',
+      language: 'zh-cn',
       // additionalLanguages: 'all',
       addMainLanguageTranslationsToAllAssets: true,
     }),
@@ -27,7 +27,7 @@ module.exports = merge(devServerConfig, {
 
     new HtmlWebpackPlugin({
       // template: path.resolve(process.cwd(), 'demo.html'),
-      template: './public/index.html',
+      template: './public/cke-index.html',
       // template: './public/simple-box.html',
       // filename: 'index.html',
     }),

@@ -4,6 +4,8 @@ const path = require('path');
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const devConfig = require('./webpack.dev');
+const express = require('express');
+
 
 module.exports = merge(devConfig, {
   devServer: {
@@ -15,6 +17,9 @@ module.exports = merge(devConfig, {
     hot: true,
     compress: true,
     historyApiFallback: true,
+    before: (app) => {
+      app.use('/', express.static(path.resolve(__dirname, '../public')));
+    },
     // inline: true,
     // clientLogLevel: 'silent',
     // clientLogLevel: 'debug',
