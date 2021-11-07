@@ -1,6 +1,6 @@
 import React from 'react';
 
-export   class ProductPreview extends React.Component<any, any> {
+export class ProductPreview extends React.Component<any, any> {
   render() {
     const style: any = {
       '--product-image': `url(${this.props.image})`,

@@ -1,5 +1,5 @@
 export const initialDataForEditor = `
-<h2>Check our last minute deals!</h2>
+<h2>在ckeditor 5编辑器中插入react组件的典型示例</h2>
 <p>Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero! Curae; consequat cubilia mattis. Litora non iaculis tincidunt.</p>
 <section class="product" data-id="2">&nbsp;</section>
 <p>Mollis gravida parturient ad maecenas euismod consectetur lacus rutrum urna eget ligula. Nisi imperdiet scelerisque natoque scelerisque cubilia nulla gravida. Eleifend malesuada pharetra est commodo venenatis aenean habitasse curae; fusce elit.</p>

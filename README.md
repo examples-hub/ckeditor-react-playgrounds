@@ -1,12 +1,11 @@
-# ckeditor-react-starter
+# ckeditor-react-playgrounds
 
-> quickstart boilerplate for ckeditor-react using typescript
+> code playgrounds for `@ckeditor/ckeditor5-react`
 
-## features
+## examples
 
-- minimal
-- built with react + typescript + babel + webpack from scratch
-- support react fast refresh(hot reloading)
+- custom image upload plugin
+- insert react components into ckeditor
 
 ## quickstart
 

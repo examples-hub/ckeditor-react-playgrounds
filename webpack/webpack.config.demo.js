@@ -15,9 +15,7 @@ module.exports = merge(devServerConfig, {
   },
   plugins: [
     new CKEditorWebpackPlugin({
-      // When changing the built-in language, remember to also change it in the editor's configuration (src/ckeditor.js).
       language: 'zh-cn',
-      // additionalLanguages: 'all',
       addMainLanguageTranslationsToAllAssets: true,
     }),
     new webpack.BannerPlugin({

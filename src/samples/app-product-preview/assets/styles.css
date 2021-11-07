@@ -34,11 +34,11 @@
   background-position: center;
   background-image: var(--product-image);
   background-size: cover;
-  height: 150px;
+  height: 120px;
   position: relative;
   overflow: hidden;
   box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.3);
-  min-width: 160px;
+  min-width: 120px;
 }
 
 .app .product-preview .product-preview__name {
@@ -73,8 +73,8 @@
 
 .app .app__product-list {
   margin-left: 20px;
-  padding: 20px;
-  min-width: 400px;
+  padding: 0 20px;
+  /* min-width: 400px; */
   border-left: 1px solid hsl(0, 0%, 87%);
 }
 
@@ -84,11 +84,11 @@
 
 .app .app__product-list ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
   margin-top: 10px;
   list-style-type: none;
-  margin: 0;
+  margin: 1.5em 0;
   padding: 0;
 }
 

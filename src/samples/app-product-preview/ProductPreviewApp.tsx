@@ -114,22 +114,14 @@ class ProcutPreviewBaseApp extends React.Component<any, any> {
       editorData: editor.getData(),
     });
 
-    // CKEditor 5 inspector allows you to take a peek into the editor's model and view
-    // data layers. Use it to debug the application and learn more about the editor.
-    // CKEditorInspector.attach(editor);
     CKEditorInspector.attach({ 'react-editor': editor });
   }
 
-  // The application renders two columns:
-  // * in the left one, the <CKEditor> and the textarea displaying live
-  //   editor data are rendered.
-  // * in the right column, a <ProductList> is rendered with available <ProductPreviews>
-  //   to choose from.
   render() {
     return (
       <div className='app'>
         <div className='app__offer-editor' key='offer-editor'>
-          <h3>Product offer editor</h3>
+          <h3>ckeditor-react示例应用</h3>
           <CKEditor
             editor={ClassicEditor}
             config={this.editorConfig}
@@ -141,12 +133,11 @@ class ProcutPreviewBaseApp extends React.Component<any, any> {
           <h3>Editor data</h3>
           <textarea value={this.state.editorData} readOnly={true} />
         </div>
-        ,
         <ProductList
           key='product-list'
           products={this.props.products}
           onClick={(id) => {
-            this.editor.execute('insertProduct', id);
+            this.editor.execute('insertProductPreview', id);
             this.editor.editing.view.focus();
           }}
         />

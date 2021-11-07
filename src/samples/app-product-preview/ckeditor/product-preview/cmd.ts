@@ -1,9 +1,9 @@
 import Command from '@ckeditor/ckeditor5-core/src/command';
 
-export default class InsertProductPreviewCommand extends Command {
-  // editor: any;
-  // isEnabled: boolean;
-
+/**
+ * provides an easy way for the “outside world” to insert product previews into the editor content
+ */
+export class InsertProductPreviewCommand extends Command {
   execute(id) {
     this.editor.model.change((writer) => {
       // Insert <productPreview id="...">*</productPreview> at the current selection position

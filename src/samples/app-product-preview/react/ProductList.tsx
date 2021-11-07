@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {ProductPreview} from './ProductPreview';
+import { ProductPreview } from './ProductPreview';
 
-export   class ProductList extends React.Component<any, any> {
+export class ProductList extends React.Component<any, any> {
   render() {
     return (
       <div className='app__product-list'>
@@ -21,7 +21,7 @@ export   class ProductList extends React.Component<any, any> {
           })}
         </ul>
         <p>
-          <b>Tip</b>: Clicking the product will add it to the editor.
+          <b>提示</b>: 点击上面的产品，就可以将产品信息插入编辑器
         </p>
       </div>
     );

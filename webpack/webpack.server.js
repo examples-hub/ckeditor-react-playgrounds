@@ -6,7 +6,6 @@ const { merge } = require('webpack-merge');
 const devConfig = require('./webpack.dev');
 const express = require('express');
 
-
 module.exports = merge(devConfig, {
   devServer: {
     // 若要使用热加载，还需要在cli上传入 --hot
@@ -20,8 +19,5 @@ module.exports = merge(devConfig, {
     before: (app) => {
       app.use('/', express.static(path.resolve(__dirname, '../public')));
     },
-    // inline: true,
-    // clientLogLevel: 'silent',
-    // clientLogLevel: 'debug',
   },
 });

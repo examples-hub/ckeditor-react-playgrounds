@@ -11,8 +11,7 @@ export const App = () => {
   return (
     <div>
       {/* <input type='' /> */}
-      <h1>Hello, CKEditor 5 编辑器 20201 </h1>
-      {/* <Card size={16} /> */}
+      <h1>Hello, CKEditor 5 编辑器 202111 </h1>
       <CKEApp />
     </div>
   );
