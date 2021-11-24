@@ -79,7 +79,8 @@ export class ProductPreviewEditing extends Plugin {
 
     // <productPreview> converters (model → editing view)
     /**
-     * * 注意editingDowncast中，createRawElement('div',options)创建div作为react组件容器
+     * * 注意editingDowncast中，createRawElement('div',options)会创建div作为react组件容器。
+     * * options为函数时，这里可以执行ReactDOM.render。
      * - Raw elements work as data containers but their children are not managed or even recognized by the editor.
      * - Raw elements are a perfect tool for integration with external frameworks and data sources.
      * - they are considered by the editor selection and they can work as widgets.
